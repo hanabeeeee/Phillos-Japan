@@ -11,6 +11,14 @@ $(function(){
     })
 });
 
+$(document).ready(function(){
+  var currentPosition = parseInt($("#gotop_wrap").css("top"));
+  $(window).scroll(function() {
+    var position = $(window).scrollTop(); 
+    $("#gotop_wrap").stop().animate({"top":position+currentPosition+"px"},350);
+  });
+});
+
 
 $(document).ready(function(){
     clientW = $("body").width();
