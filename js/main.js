@@ -17,6 +17,9 @@ $(document).ready(function(){
     var position = $(window).scrollTop(); 
     $("#gotop_wrap").stop().animate({"top":position+currentPosition+"px"},350);
   });
+
+
+
 });
 
 
@@ -29,5 +32,30 @@ $(document).ready(function(){
       $(".gotop_box img").css("width","100px");
       $(".gotop_box i").css("font-size","100px");
    }
+
+   
+
+
+   $('.slider').slick ({
+    autoplay: true,
+  autoplaySpeed: 3000,
+    dots: true,
+    infinite: true,
+    speed: 200,
+    slidesToShow: 1,
+    });
+
+
 });
   
+
+
+
+
+
+
+
+
+
+
+
