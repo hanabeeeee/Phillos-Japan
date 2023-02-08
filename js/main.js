@@ -44,6 +44,7 @@ $(document).ready(function(){
     infinite: true,
     speed: 200,
     slidesToShow: 1,
+    
     });
 
 
